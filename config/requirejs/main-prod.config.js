@@ -1,0 +1,1 @@
+module.exports = {"baseUrl":"","deps":[],"paths":{"angular":"empty:"},"shim":""} ;

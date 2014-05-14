@@ -1,0 +1,47 @@
+{
+    "baseUrl": {
+        "$filter": "target",
+        "test": {
+            "$value": "/base/src"
+        },
+        "production": {
+            "$value": ""
+        }
+    },
+    "deps": {
+        "$filter": "target",
+        "test": {
+            "$value": ["angular", "angular-mocks"]
+        },
+        "production": {
+            "$value": []
+        }
+    },
+    "paths": {
+        "$filter": "target",
+        "test": {
+            "$value": {
+                "angular": "vendor/angular/angular",
+                "angular-mocks": "vendor/angular-mocks/angular-mocks"
+            }
+        },
+        "production": {
+            "$value": {
+                "angular": "empty:"
+            }
+        }
+
+    },
+    "shim": {
+        "$filter": "target",
+        "test": {
+            "$value": {
+                "angular-mocks": ["angular"]
+            }
+        },
+        "production": {
+            "$value": ""
+        }
+    }
+
+}
